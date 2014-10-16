@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:MySpriteSample/MySpriteSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MyGravity/MyGravity.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:MyCalculator/MyCalculator.xcodeproj">
+   </FileRef>
+</Workspace>

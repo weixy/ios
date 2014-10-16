@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "MyWeather.WXManager.(updateDailyForecast (MyWeather.WXManager) -&gt; () -&gt; ObjectiveC.RACSignal).(closure #1):WXManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MyWeather.WXManager.init (MyWeather.WXManager.Type)() -&gt; MyWeather.WXManager:WXManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MyWeather.WXClient.(fetchHourlyForecastForLocation (MyWeather.WXClient) -&gt; (C.CLLocationCoordinate2D) -&gt; ObjectiveC.RACSignal).(closure #1):WXClient.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MyWeather.WXManager.locationManager (MyWeather.WXManager)(ObjectiveC.CLLocationManager, didUpdateLocations : Swift.Array&lt;Swift.AnyObject&gt;) -&gt; ():WXManager.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "location.horizontalAccuracy">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyWeather.ViewController.tableView (MyWeather.ViewController)(Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITableView&gt;, numberOfRowsInSection : Swift.Int) -&gt; Swift.Int:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "WXManager.sharedManager.dailyForecast.count">
+            </PersistentString>
+            <PersistentString
+               value = "WXManager.sharedManager.dailyForecast">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyWeather.ViewController.viewDidLoad (MyWeather.ViewController)() -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "WXManager.sharedManager.hourlyForecast">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyWeather.ViewController.tableView (MyWeather.ViewController)(ObjectiveC.UITableView, cellForRowAtIndexPath : ObjectiveC.NSIndexPath) -&gt; ObjectiveC.UITableViewCell:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.section">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyWeather.WXManager.(updateHourlyForecast (MyWeather.WXManager) -&gt; () -&gt; ObjectiveC.RACSignal).(closure #1):WXManager.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "conditions.count">
+            </PersistentString>
+            <PersistentString
+               value = "self.client.fetchHourlyForecastForLocation(self.currentLocation!.coordinate)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "@objc MyWeather.ViewController.viewDidLoad (MyWeather.ViewController)() -&gt; ():(null)">
+         <PersistentStrings>
+            <PersistentString
+               value = "WXManager.sharedManager">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyWeather.ViewController.configureDailyCell (MyWeather.ViewController)(ObjectiveC.UITableViewCell, weather : MyWeather.WXCondition) -&gt; ():ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MyWeather.ViewController.tableView (MyWeather.ViewController)(ObjectiveC.UITableView, heightForRowAtIndexPath : ObjectiveC.NSIndexPath) -&gt; CoreGraphics.CGFloat:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.section">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyWeather.WXManager.(updateCurrentConditions (MyWeather.WXManager) -&gt; () -&gt; ObjectiveC.RACSignal).(closure #1):WXManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MyWeather.WXClient.(fetchHourlyForecastForLocation (MyWeather.WXClient) -&gt; (C.CLLocationCoordinate2D) -&gt; ObjectiveC.RACSignal).(closure #1).(closure #1):WXClient.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "item.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyWeather.WXCondition.imageName (MyWeather.WXCondition)() -&gt; ObjectiveC.NSString:WXCondition.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

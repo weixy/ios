@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "MyGravity.ViewController.viewDidLoad (MyGravity.ViewController)() -&gt; ():ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MyGravity.GravityViewController.unarchiveFromFile (MyGravity.GravityViewController)(ObjectiveC.NSString) -&gt; Swift.Optional&lt;ObjectiveC.SKNode&gt;:GravityViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "NSKeyedArchiveRootObjectKey">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MySpriteSample.GameViewController.viewDidLoad (MySpriteSample.GameViewController)() -&gt; ():GameViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MyGravity.GameScene.touchesBegan (MyGravity.GameScene)(ObjectiveC.NSSet, withEvent : ObjectiveC.UIEvent) -&gt; ():GameScene.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
