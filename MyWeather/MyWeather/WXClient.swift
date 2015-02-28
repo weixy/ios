@@ -51,16 +51,16 @@ class WXClient {
     
     func fetchCurrentConditionsForLocation(coordinate: CLLocationCoordinate2D) -> RACSignal {
         let urlString = NSString(format: "http://api.openweathermap.org/data/2.5/weather?lat=%f&lon=%f&units=metric",coordinate.latitude, coordinate.longitude)
-        var url = NSURL.URLWithString(urlString)
-        return self.fetchJSONFromURL(url).map({json -> AnyObject! in
+        var url = NSURL(string:urlString)
+        return self.fetchJSONFromURL(url!).map({json -> AnyObject! in
             return MTLJSONAdapter.modelOfClass(WXCondition.self, fromJSONDictionary: json as NSDictionary, error: nil)
         })
     }
     
     func fetchHourlyForecastForLocation(coordinate: CLLocationCoordinate2D) -> RACSignal {
         let urlString = NSString(format: "http://api.openweathermap.org/data/2.5/forecast?lat=%f&lon=%f&units=metric&cnt=12",coordinate.latitude, coordinate.longitude)
-        var url = NSURL.URLWithString(urlString)
-        return self.fetchJSONFromURL(url).map({json -> AnyObject! in
+        var url = NSURL(string: urlString)
+        return self.fetchJSONFromURL(url!).map({json -> AnyObject! in
             var list: RACSequence? = json.objectForKey("list")?.rac_sequence
             return list?.map({item -> AnyObject! in
                 return MTLJSONAdapter.modelOfClass(WXCondition.self, fromJSONDictionary: item as NSDictionary, error: nil)
@@ -70,8 +70,8 @@ class WXClient {
     
     func fetchDailyForecastForLocation(coordinate: CLLocationCoordinate2D) -> RACSignal {
         let urlString = NSString(format: "http://api.openweathermap.org/data/2.5/forecast/daily?lat=%f&lon=%f&units=metric&cnt=7",coordinate.latitude, coordinate.longitude)
-        var url = NSURL.URLWithString(urlString)
-        return self.fetchJSONFromURL(url).map({json -> AnyObject! in
+        var url = NSURL(string: urlString)
+        return self.fetchJSONFromURL(url!).map({json -> AnyObject! in
             var list: RACSequence? = json.objectForKey("list")?.rac_sequence
             return list?.map({item -> AnyObject! in
                 return MTLJSONAdapter.modelOfClass(WXDailyForecast.self, fromJSONDictionary: item as NSDictionary, error: nil)
