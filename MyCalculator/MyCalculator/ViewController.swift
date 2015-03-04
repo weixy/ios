@@ -160,7 +160,7 @@ class ViewController: UIViewController {
     }
     
     func addLabel(type: Int, text: String, color: UIColor, background: UIColor) -> UILabel {
-        var size = (text as NSString).sizeWithAttributes([NSFontAttributeName: font])
+        var size = (text as NSString).sizeWithAttributes([NSFontAttributeName: UIFont.systemFontOfSize(25.0)])
         var x: CGFloat = 0
         var y: CGFloat = 0
         for preLabel in labelArray {
@@ -193,7 +193,7 @@ class ViewController: UIViewController {
     }
     
     func updateLabel(label: UILabel, text: String) {
-        var size = (text as NSString).sizeWithAttributes([NSFontAttributeName: font])
+        var size = (text as NSString).sizeWithAttributes([NSFontAttributeName: UIFont.systemFontOfSize(25.0)])
         var x: CGFloat = label.frame.origin.x
         var y: CGFloat = label.frame.origin.y
         if (x + size.width) > 290 {
