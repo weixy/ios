@@ -13,6 +13,13 @@
 		BC627FD11AABDDDF007FD661 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC627FD01AABDDDF007FD661 /* Images.xcassets */; };
 		BC627FD41AABDDDF007FD661 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC627FD21AABDDDF007FD661 /* LaunchScreen.xib */; };
 		BC627FE01AABDDDF007FD661 /* MyMusicLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC627FDF1AABDDDF007FD661 /* MyMusicLibraryTests.swift */; };
+		BC627FEB1AAC35BB007FD661 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC627FEA1AAC35BB007FD661 /* HTTPClient.swift */; };
+		BC627FED1AAC3998007FD661 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC627FEC1AAC3998007FD661 /* Album.swift */; };
+		BC627FF01AAC3B6A007FD661 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC627FEF1AAC3B6A007FD661 /* AlbumView.swift */; };
+		BC627FF51AAC407B007FD661 /* LibraryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC627FF41AAC407B007FD661 /* LibraryAPI.swift */; };
+		BC627FF71AAC4AC7007FD661 /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC627FF61AAC4AC7007FD661 /* PersistencyManager.swift */; };
+		BCB6C86B1AAEF6DE00E2AB97 /* HorizontalScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6C86A1AAEF6DE00E2AB97 /* HorizontalScroller.swift */; };
+		BCD00C5B1AADA961002D9812 /* AlbumExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD00C5A1AADA961002D9812 /* AlbumExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,13 @@
 		BC627FD91AABDDDF007FD661 /* MyMusicLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMusicLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC627FDE1AABDDDF007FD661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC627FDF1AABDDDF007FD661 /* MyMusicLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMusicLibraryTests.swift; sourceTree = "<group>"; };
+		BC627FEA1AAC35BB007FD661 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		BC627FEC1AAC3998007FD661 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		BC627FEF1AAC3B6A007FD661 /* AlbumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
+		BC627FF41AAC407B007FD661 /* LibraryAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryAPI.swift; sourceTree = "<group>"; };
+		BC627FF61AAC4AC7007FD661 /* PersistencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
+		BCB6C86A1AAEF6DE00E2AB97 /* HorizontalScroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalScroller.swift; sourceTree = "<group>"; };
+		BCD00C5A1AADA961002D9812 /* AlbumExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +91,11 @@
 		BC627FC61AABDDDF007FD661 /* MyMusicLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				BC627FEE1AAC39E7007FD661 /* API */,
 				BC627FC91AABDDDF007FD661 /* AppDelegate.swift */,
-				BC627FCB1AABDDDF007FD661 /* ViewController.swift */,
+				BC627FF11AAC3FE1007FD661 /* Model */,
+				BC627FF21AAC4009007FD661 /* View */,
+				BC627FF31AAC4017007FD661 /* Controller */,
 				BC627FCD1AABDDDF007FD661 /* Main.storyboard */,
 				BC627FD01AABDDDF007FD661 /* Images.xcassets */,
 				BC627FD21AABDDDF007FD661 /* LaunchScreen.xib */,
@@ -110,6 +127,42 @@
 				BC627FDE1AABDDDF007FD661 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC627FEE1AAC39E7007FD661 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BC627FEA1AAC35BB007FD661 /* HTTPClient.swift */,
+				BC627FF41AAC407B007FD661 /* LibraryAPI.swift */,
+				BC627FF61AAC4AC7007FD661 /* PersistencyManager.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		BC627FF11AAC3FE1007FD661 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCD00C5A1AADA961002D9812 /* AlbumExtensions.swift */,
+				BC627FEC1AAC3998007FD661 /* Album.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BC627FF21AAC4009007FD661 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCB6C86A1AAEF6DE00E2AB97 /* HorizontalScroller.swift */,
+				BC627FEF1AAC3B6A007FD661 /* AlbumView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BC627FF31AAC4017007FD661 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC627FCB1AABDDDF007FD661 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +266,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC627FCC1AABDDDF007FD661 /* ViewController.swift in Sources */,
+				BCD00C5B1AADA961002D9812 /* AlbumExtensions.swift in Sources */,
 				BC627FCA1AABDDDF007FD661 /* AppDelegate.swift in Sources */,
+				BC627FF51AAC407B007FD661 /* LibraryAPI.swift in Sources */,
+				BCB6C86B1AAEF6DE00E2AB97 /* HorizontalScroller.swift in Sources */,
+				BC627FEB1AAC35BB007FD661 /* HTTPClient.swift in Sources */,
+				BC627FF01AAC3B6A007FD661 /* AlbumView.swift in Sources */,
+				BC627FED1AAC3998007FD661 /* Album.swift in Sources */,
+				BC627FF71AAC4AC7007FD661 /* PersistencyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +467,7 @@
 				BC627FE51AABDDDF007FD661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC627FE61AABDDDF007FD661 /* Build configuration list for PBXNativeTarget "MyMusicLibraryTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +476,7 @@
 				BC627FE81AABDDDF007FD661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
