@@ -13,6 +13,7 @@
 		BCBBF72C1AAA82C500C20595 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBBF72B1AAA82C500C20595 /* Images.xcassets */; };
 		BCBBF72F1AAA82C500C20595 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCBBF72D1AAA82C500C20595 /* LaunchScreen.xib */; };
 		BCBBF73B1AAA82C500C20595 /* Segues_Delegates_PracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBBF73A1AAA82C500C20595 /* Segues_Delegates_PracticeTests.swift */; };
+		BCF02D741AAAA7530001E57A /* FooTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF02D731AAAA7530001E57A /* FooTwoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		BCBBF7341AAA82C500C20595 /* Segues Delegates PracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Segues Delegates PracticeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBBF7391AAA82C500C20595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCBBF73A1AAA82C500C20595 /* Segues_Delegates_PracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segues_Delegates_PracticeTests.swift; sourceTree = "<group>"; };
+		BCF02D731AAAA7530001E57A /* FooTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooTwoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				BCBBF7241AAA82C500C20595 /* AppDelegate.swift */,
 				BCBBF7261AAA82C500C20595 /* ViewController.swift */,
+				BCF02D731AAAA7530001E57A /* FooTwoViewController.swift */,
 				BCBBF7281AAA82C500C20595 /* Main.storyboard */,
 				BCBBF72B1AAA82C500C20595 /* Images.xcassets */,
 				BCBBF72D1AAA82C500C20595 /* LaunchScreen.xib */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF02D741AAAA7530001E57A /* FooTwoViewController.swift in Sources */,
 				BCBBF7271AAA82C500C20595 /* ViewController.swift in Sources */,
 				BCBBF7251AAA82C500C20595 /* AppDelegate.swift in Sources */,
 			);
@@ -407,6 +411,7 @@
 				BCBBF7401AAA82C500C20595 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCBBF7411AAA82C500C20595 /* Build configuration list for PBXNativeTarget "Segues Delegates PracticeTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				BCBBF7431AAA82C500C20595 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
