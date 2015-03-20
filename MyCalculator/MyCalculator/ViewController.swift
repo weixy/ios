@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet var toobar: UIToolbar!
+    @IBOutlet var toolbar: UIToolbar!
+    @IBOutlet var toolbar: UIToolbar!
+    @IBOutlet var toolbar: UIToolbar!
+    @IBOutlet var colorLabel: UILabel!
     let ADDNEW_LABEL = "AddNewLabel"
     let UPDATE_LABEL = "UpdateLabel"
     let CLEAN_LABEL = "CleanLabel"
