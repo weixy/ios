@@ -2,34 +2,36 @@
 //  FooTwoViewController.swift
 //  Segues Delegates Practice
 //
-//  Created by 魏鑫焱 on 7/03/15.
+//  Created by weixy on 7/03/15.
 //  Copyright (c) 2015 j1mw3i. All rights reserved.
 //
 
 import UIKit
 
+protocol FooTwoViewControllerDelegate {
+    func myVCDidFinish(controller: FooTwoViewController, text: String)
+}
+
 class FooTwoViewController: UIViewController {
 
+    var delegate: FooTwoViewControllerDelegate? = nil
+    var colorString = ""
+    
+    @IBOutlet var colorLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        colorLabel.text = colorString
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func saveColor(sender: UIButton) {
+        if delegate != nil {
+            delegate?.myVCDidFinish(self, text: colorLabel.text!)
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func colorSelectionButton(sender: UIButton) {
+        colorLabel.text = sender.titleLabel?.text
+        
     }
-    */
-
 }
